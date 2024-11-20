@@ -10,7 +10,6 @@ pipeline {
         }
          stage('K8s ACTION') {
 		  steps {
-		 
                 sh 'kubectl $ACTION -f ./gke .'
 	    }
 	 }
@@ -19,6 +18,6 @@ pipeline {
 		 sh 'sleep 60'
                 sh 'curl http://34.41.112.60/hello'
 	    }
-	 }
-		
+	 }	
   }
+}
