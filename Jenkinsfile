@@ -14,5 +14,11 @@ pipeline {
                 sh 'kubectl $ACTION -f ./gke .'
 	    }
 	 }
+	stage('Health check') {
+		  steps {
+		 sh 'sleep 60'
+                sh 'curl http://34.41.112.60/hello'
+	    }
+	 }
 		
   }
