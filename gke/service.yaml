@@ -14,4 +14,4 @@ spec:
   selector:
     app: "javaapp"
   type: "LoadBalancer"
-  loadBalancerIP: ""
+  loadBalancerIP: "34.41.112.60"
