@@ -9,7 +9,7 @@ metadata:
 spec:  
   ports:
   - protocol: "TCP"
-    port: 8089
+    port: 80
     targetPort: 8080
   selector:
     app: "javaapp"
