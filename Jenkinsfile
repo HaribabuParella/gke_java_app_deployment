@@ -10,7 +10,7 @@ pipeline {
         }
          stage('K8s ACTION') {
 		  steps {
-			  sh 'kubectl $ACTION -f ./gke/deployment.yaml ${image_to_promote}'
+			  sh 'kubectl $ACTION -f ./gke/'
 	    }
 	 }
 	stage('Health check') {
