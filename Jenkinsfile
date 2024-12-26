@@ -16,7 +16,7 @@ pipeline {
 	stage('Health check') {
 		  steps {
 		 sh 'sleep 60'
-                sh 'curl http://34.41.112.60/hello'
+                sh 'curl http://34.45.212.220/hello'
 	    }
 	 }	
   }
